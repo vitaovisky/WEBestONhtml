@@ -1,0 +1,289 @@
+body{
+    background:rgb(254,254,254);
+    text-align: center;
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+}
+
+div, section{
+    display: block;
+}
+
+
+    /* CABEÇALHO */
+
+header{
+    text-align: center;
+    border-width: 10px;
+    border-style: none;
+    box-shadow: 0px 2px 20px rgb(140,140,140);
+}
+
+.imgpadrao{
+    max-width: 100%;
+    height: auto;
+}
+
+#logoprincipal{
+    transform: scale(0.8);
+}
+
+    /* PRINCIPAL */
+
+main{
+    background: rgba(255,255,255,0);
+
+}
+
+    /* QUEM SOMOS */
+
+.quemsomos{
+    background: rgba(255,255,255,0);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sobre{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+.sobre h2{
+    font-family: 'Bebas Neue', serif;
+    letter-spacing: 3px;
+    color: rgb(0,0,0);
+}
+
+.sobre p{
+    font-family: Roboto, sans-serif;
+    color: rgb(0,0,0);
+    font-weight: bold;
+}
+
+    /* ATRIBUTOS DA EMPRESA */
+
+
+.caixas-de-conteudo{
+    background: url(programming-1873854_1920.png), rgb(56,182,255);
+    filter: blur(0px);
+}
+
+.row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+    justify-content: center!important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding: 50px 0;
+}    
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+  
+  
+
+.col{
+    background: rgba(255,255,255,0);
+    text-align: center;
+    flex: 0 0 auto;
+    width: 30%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.box{
+    background: rgba(254,254,254,0.96);
+    box-shadow: 10px 10px 20px 5px rgb(0,0,0);
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.box .icone{
+    max-width: 80px;
+    max-height: 80px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.box h3{
+    font-family: 'Bebas Neue', serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.box p{
+    font-family: Roboto, sans-serif;
+    color: #000000;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* EXTRA SOBRE LADOS POSITIVOS*/
+
+.positivos {
+    background: rgba(255,255,255,0);
+
+}
+
+.positivos h3{
+    font-family: 'Bebas Neue', serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.positivos p{
+    font-family: Roboto, sans-serif;
+    color: rgb(0,0,0);
+}
+
+.contato{
+background: rgba(255,255,255,0);
+transform-origin: center;
+}
+
+.coluna-contato{
+    text-align: center;
+}
+
+.contato h2{
+    font-family: 'Bebas Neue', serif;
+    letter-spacing: 3px;
+    color: rgb(0,0,0);
+}
+
+.contato p{
+    font-family: Roboto, sans-serif;
+    color: rgb(0,0,0);
+}
+
+.contato .instagram{
+    text-align: center;
+    padding: 0px;
+}
+
+.ig-icone{
+    width: 70px;
+    height: 70px;
+}
+
+footer{
+    border-color: #000000;
+    background: #000000;
+    text-align: center;
+    transform-origin: bottom;
+    height: 150px;
+}
+
+footer .imgpadrao{
+    width: 250px;
+    transform-origin: top;
+}
+
+footer p{
+    color: rgb(255,255,255);
+    font-family: Arimo, sans-serif;
+    font-size: 10px;
+}
+
+
+/* DESIGN RESPONSIVO DE ACORDO COM A PIXELAGEM DA TELA*/
+
+
+@media screen and (min-width:576px){
+
+.container{
+    max-width: 540px;
+}    
+        
+.col{
+    flex: 0 0 auto;
+    width: 50%;
+}
+    
+}
+
+@media screen and (min-width:768px){
+
+.container{
+    max-width: 720px;
+}
+    
+.col{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.coluna-contato{
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+}
+
+@media screen and (min-width:992px){
+
+.container{
+    max-width: 960px;
+}
+        
+.col{
+    flex: 0 0 auto;
+    width: 30%;
+}
+    
+}
+
+@media screen and (min-width:1200px){
+
+.container{
+    max-width: 1140px;
+}
+
+.col{
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+}
+
+@media screen and (min-width:1400px){
+
+.container{
+    max-width: 1320px;
+}
+
+.col{
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+}
